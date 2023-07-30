@@ -9,7 +9,7 @@ rule pikabot{
 
         strings:
         $s1 = {
-			8A 44 0D ??
+			8A 44 0D C0
 			34 ??
 			88 84 0D ?? ?? ?? ??
 			4?
