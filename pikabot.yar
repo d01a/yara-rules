@@ -1,13 +1,12 @@
-
 rule pikabot{
     meta:
-    malware = "Pikabot"
-    hash = "59f42ecde152f78731e54ea27e761bba748c9309a6ad1c2fd17f0e8b90f8aed1"
-    reference = "https://d01a.github.io/"
-    author = "d01a"
-    description = "detect pikabot loader and core module"
+        malware = "Pikabot"
+        hash = "59f42ecde152f78731e54ea27e761bba748c9309a6ad1c2fd17f0e8b90f8aed1"
+        reference = "https://d01a.github.io/"
+        author = "d01a"
+        description = "detect pikabot loader and core module"
 
-        strings:
+    strings:
         $s1 = {
 			8A 44 0D C0
 			34 ??
