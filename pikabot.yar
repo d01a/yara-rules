@@ -1,7 +1,7 @@
 rule pikabot{
     meta:
         malware = "Pikabot"
-        hash = "59f42ecde152f78731e54ea27e761bba748c9309a6ad1c2fd17f0e8b90f8aed1"
+        hash = "11cbb0233aff83d54e0d9189d3a08d02a6bbb0ffa5c3b161df462780e0ee2d2d"
         reference = "https://d01a.github.io/"
         author = "d01a"
         description = "detect pikabot loader and core module"
@@ -9,21 +9,17 @@ rule pikabot{
     strings:
         $s1 = {
 			8A 44 0D C0
-			34 ??
-			88 84 0D ?? ?? ?? ??
+			?? ?? 
+			88 84 0D ?? ?? FF FF 
 			4?
 			83 ?? ??
 			7C ??
+			[0-16]
+			(C7 45 | 88 95)
 		}
-        $s2 = {
-            83 ?? ??
-			74 ??
-			4?
-			83 ?? ??
-			7C ??
-        }
+		
     condition:
         uint16(0) == 0x5A4D
         and (uint32(uint32(0x3C)) == 0x00004550)
-        and any of them
+        and all of them
 }
