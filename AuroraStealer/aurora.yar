@@ -5,6 +5,7 @@ rule aurora_stealer{
     reference = "https://d01a.github.io/"
     Author = "d01a"
     description = "detect Aurora stealer"
+    date = "2023-04-12"
 
     strings:
     $is_go = "Go build" ascii

@@ -3,6 +3,7 @@ rule RedLine_Stealer {
         malware = "Redline Stealer"
         author = "d01a"
         description = "detect RedLine Stealer (old version. I don't remember the date)"
+        date = "2023-09-12"
 
     strings:
         $s0 = {

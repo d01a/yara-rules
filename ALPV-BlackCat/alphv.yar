@@ -3,7 +3,8 @@ rule ALPHV_BlackCat_Ransomware {
         malware = "ALPHV/BlackCat Ransomware"
         hash = "ecea6b772742758a2240898ef772ca11aa9d870aec711cffab8994c23044117c"
         author = "d01a"
-        description = "detect ALPHV/BlackCat Ransomware (old version. I don't remember the date)"
+        description = "detect ALPHV/BlackCat Ransomware"
+        date = "2023-09-12"
 
     strings:
         $alphv1 = "No Access Token Provided" ascii

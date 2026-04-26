@@ -5,6 +5,7 @@ rule pikabot{
         reference = "https://d01a.github.io/"
         author = "d01a"
         description = "detect pikabot loader and core module"
+        date = "2023-07-31"
 
     strings:
         $s1 = {
