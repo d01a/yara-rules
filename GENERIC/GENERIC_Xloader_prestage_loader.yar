@@ -18,7 +18,6 @@ rule GENERIC_Xloader_PS_prestage_loader {
 }
 
 
-
 rule GENERIC_Xloader_prestage_NET_Loader {
     meta:
         malware = "GENERIC_Xloader_prestage_NET_Loader_obf"
