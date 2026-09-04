@@ -2,7 +2,7 @@ rule GENERIC_Xloader_PS_prestage_loader {
     meta:
         malware = "GENERIC Loader"
         author = "d01a"
-        description = "Hunt for GENERIC script loader that used ton deliver multiuple malware families"
+        description = "Hunt for GENERIC script loader that used to deliver multiuple malware families. This is NOT a good detection rule at all! but it it's helpful to hunt for similar script header"
         date = "2026-08-31"
         sha256 = "8e60280c59b760a2e8c88d51e9fc8cb68c9ebe55b15106bd127cfdabab740bfc"
         
@@ -25,7 +25,7 @@ rule GENERIC_Xloader_prestage_NET_Loader {
         description = "detect GENERIC Xloader-prestage .NET Loader - obfuscated with confuser"
         date = "2026-08-31"
         sha256 = "d324cee32a91d3761dbcd3a442088f130ad1a30a30590b24bfa1b52a7b212968"
-        sha256 = "456e270b4286faaebf65ba8feb11d76c84f9e8087ffa527a04f3449bdb638448"
+        sha256 = "c729348afbf9e37bc065f755570699ca3579417579adef5a11ad0fdbe3977a29"
 
     strings:
     
